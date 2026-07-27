@@ -31,6 +31,11 @@ cleanup() {
 
 trap cleanup EXIT
 
+if [[ "${1:-}" != "--all-from-readme" ]]; then
+  exec python3 "${SCRIPT_DIR}/scripts/skill-manager.py" "$@"
+fi
+shift
+
 mkdir -p "$SKILLS_DIR" "$CACHE_DIR"
 
 normalize_repo_path() {
@@ -139,7 +144,7 @@ copy_referenced_paths() {
         continue
       fi
 
-      relative_path="${resolved_path#${repo_dir_real}/}"
+      relative_path="${resolved_path#"${repo_dir_real}"/}"
       destination_path="${destination_dir}/${relative_path}"
 
       if [[ -d "$resolved_path" ]]; then
@@ -163,7 +168,7 @@ skill_destination_name() {
     return 0
   fi
 
-  relative_dir="${skill_dir#${repo_dir}/}"
+  relative_dir="${skill_dir#"${repo_dir}"/}"
   sanitized_relative="$(sanitize_name "$relative_dir")"
   printf '%s-%s\n' "$repo_slug" "$sanitized_relative"
 }
@@ -285,7 +290,7 @@ resolve_fuzzy_skill_dir() {
     [[ -n "$skill_dir" ]] || continue
     [[ "$skill_dir" == "$cache_repo_dir" ]] && continue
 
-    relative_dir="${skill_dir#${cache_repo_dir}/}"
+    relative_dir="${skill_dir#"${cache_repo_dir}"/}"
     candidate_name="$(sanitize_name "${relative_dir##*/}")"
     candidate_full="$(sanitize_name "$relative_dir")"
     candidate_name_canon="$(canonicalize_name "${relative_dir##*/}")"
@@ -366,7 +371,7 @@ extract_requested_path() {
 
   fuzzy_match="$(resolve_fuzzy_skill_dir "$cache_repo_dir" "$requested_path" || true)"
   if [[ -n "$fuzzy_match" ]]; then
-    fuzzy_relative="${fuzzy_match#${cache_repo_dir}/}"
+    fuzzy_relative="${fuzzy_match#"${cache_repo_dir}"/}"
     log "MAP: ${repo_path} -> ${requested_path} => ${fuzzy_relative}"
     extract_skill_dir "$repo_path" "$cache_repo_dir" "$repo_slug" "$fuzzy_match"
     return 0
@@ -586,7 +591,6 @@ replace_skills_directory() {
 main() {
   local repo_path
   local requested_path
-  local pending_repo_path=""
   local -a pending_requested_paths=()
   local current_repo_path=""
 

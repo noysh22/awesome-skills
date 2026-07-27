@@ -1,0 +1,643 @@
+version: 1
+
+defaults:
+  groups:
+    - superpowers
+    - coding-and-testing
+    - agent-development
+    - context-engineering
+    - secure-review
+    - ui-quality
+    - playwright-testing
+  install_status:
+    - approved
+
+sources:
+  obra-superpowers:
+    kind: git
+    repo: https://github.com/obra/superpowers.git
+    ref: v6.2.0
+    commit: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  trailofbits-skills:
+    kind: git
+    repo: https://github.com/trailofbits/skills.git
+    ref: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+    commit: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  anthropics-skills:
+    kind: git
+    repo: https://github.com/anthropics/skills.git
+    ref: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+    commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  lambdatest-agent-skills:
+    kind: git
+    repo: https://github.com/LambdaTest/agent-skills.git
+    ref: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+    commit: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  getsentry-skills:
+    kind: git
+    repo: https://github.com/getsentry/skills.git
+    ref: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
+    commit: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
+  hamelsmu-evals-skills:
+    kind: git
+    repo: https://github.com/hamelsmu/evals-skills.git
+    ref: 814ebeae0ecef6151a4d3846e19ab123e1832137
+    commit: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  context-engineering:
+    kind: git
+    repo: https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering.git
+    ref: c578e85e40fe2bda7c1fec91ff64cf5285434934
+    commit: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  openai-skills:
+    kind: git
+    repo: https://github.com/openai/skills.git
+    ref: 49f948faa9258a0c61caceaf225e179651397431
+    commit: 49f948faa9258a0c61caceaf225e179651397431
+  ibelick-ui-skills:
+    kind: git
+    repo: https://github.com/ibelick/ui-skills.git
+    ref: ae74b58e722abe7ddf5948e07dd220808acce8a9
+    commit: ae74b58e722abe7ddf5948e07dd220808acce8a9
+  meodai-color-expert:
+    kind: git
+    repo: https://github.com/meodai/skill.color-expert.git
+    ref: 2e30f07874ec947f10f3e4803d7295055dec83bd
+    commit: 2e30f07874ec947f10f3e4803d7295055dec83bd
+  testdino-playwright:
+    kind: git
+    repo: https://github.com/testdino-hq/playwright-skill.git
+    ref: d3be9ca4d7303e2aee3eba4842963abf573117b0
+    commit: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  neolab-context-engineering:
+    kind: git
+    repo: https://github.com/NeoLabHQ/context-engineering-kit.git
+    ref: c4da85aef8c486148c33131e736c896dfa302bf0
+    commit: c4da85aef8c486148c33131e736c896dfa302bf0
+  claude-memory-kit:
+    kind: git
+    repo: https://github.com/awrshift/claude-memory-kit.git
+    ref: a23ed45f5e952054d864bd4731c03607f88da755
+    commit: a23ed45f5e952054d864bd4731c03607f88da755
+  agent-reach:
+    kind: git
+    repo: https://github.com/Panniantong/Agent-Reach.git
+    ref: b4d52c46c9113cb0f653d6df4cf71ebadf4930ac
+    commit: b4d52c46c9113cb0f653d6df4cf71ebadf4930ac
+  k-dense-scientific:
+    kind: git
+    repo: https://github.com/K-Dense-AI/claude-scientific-skills.git
+    ref: 665663cac17c7cbfa71a6a3b2dad95db494996c1
+    commit: 665663cac17c7cbfa71a6a3b2dad95db494996c1
+  orchestra-ai-research:
+    kind: git
+    repo: https://github.com/Orchestra-Research/AI-research-SKILLs.git
+    ref: 773a52944ba4747a18bd4ae9ade53fff041adcbc
+    commit: 773a52944ba4747a18bd4ae9ade53fff041adcbc
+  claude-ally-health:
+    kind: git
+    repo: https://github.com/huifer/Claude-Ally-Health.git
+    ref: f604350c8448194ee7791495c1b3b84e1895c30b
+    commit: f604350c8448194ee7791495c1b3b84e1895c30b
+  lawvable-legal:
+    kind: git
+    repo: https://github.com/lawvable/awesome-legal-skills.git
+    ref: 7f58aaf1fbc7b12904b15b622edb1f8ac0742f5a
+    commit: 7f58aaf1fbc7b12904b15b622edb1f8ac0742f5a
+  genealogy-research:
+    kind: http
+    url: https://paulo.com.br/skills/genealogy-research/SKILL.md
+    sha256: 06f17b18f53314c99580d656827906ff23e55f0ee62e9103ad604f7f5462dd3a
+  zxkane-aws-skills:
+    kind: git
+    repo: https://github.com/zxkane/aws-skills.git
+    ref: 68530c6f296ccd2f5e99c79782f3e0fbf962c51a
+    commit: 68530c6f296ccd2f5e99c79782f3e0fbf962c51a
+  videodb-skills:
+    kind: git
+    repo: https://github.com/video-db/skills.git
+    ref: b7349d2d3155e9fbd3068fcb80bad22b68ad3c9b
+    commit: b7349d2d3155e9fbd3068fcb80bad22b68ad3c9b
+  ui-ux-pro-max:
+    kind: git
+    repo: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+    ref: 1307d97a72e6c1cda572cb65471ae5ce82995218
+    commit: 1307d97a72e6c1cda572cb65471ae5ce82995218
+  lackeyjb-playwright:
+    kind: git
+    repo: https://github.com/lackeyjb/playwright-skill.git
+    ref: bb7e920d376022958214e349ef25498a2644e189
+    commit: bb7e920d376022958214e349ef25498a2644e189
+
+groups:
+  superpowers:
+    enabled_by_default: true
+    description: Complete Obra Superpowers engineering workflow.
+    skills:
+      - using-superpowers
+      - brainstorming
+      - writing-plans
+      - executing-plans
+      - dispatching-parallel-agents
+      - subagent-driven-development
+      - test-driven-development
+      - systematic-debugging
+      - verification-before-completion
+      - requesting-code-review
+      - receiving-code-review
+      - using-git-worktrees
+      - finishing-a-development-branch
+      - writing-skills
+  coding-and-testing:
+    enabled_by_default: true
+    description: Daily implementation and testing practices.
+    skills:
+      - modern-python
+      - frontend-design
+      - webapp-testing
+      - api-testing
+      - junit-5
+      - pytest
+      - vitest
+      - property-based-testing
+  agent-development:
+    enabled_by_default: true
+    description: Agent, skill, MCP, and product-evaluation development.
+    skills:
+      - agents-md
+      - mcp-builder
+      - skill-creator
+      - eval-audit
+      - error-analysis
+      - generate-synthetic-data
+      - write-judge-prompt
+      - validate-evaluator
+  context-engineering:
+    enabled_by_default: true
+    description: Context, memory, tools, multi-agent systems, and evaluation.
+    skills:
+      - context-fundamentals
+      - context-degradation
+      - context-compression
+      - context-optimization
+      - filesystem-context
+      - multi-agent-patterns
+      - memory-systems
+      - tool-design
+      - evaluation
+  secure-review:
+    enabled_by_default: true
+    description: Secure coding, threat modeling, and review workflows.
+    skills:
+      - security-best-practices
+      - security-threat-model
+      - differential-review
+      - insecure-defaults
+      - static-analysis
+      - variant-analysis
+  ui-quality:
+    enabled_by_default: true
+    description: Accessible, performant, intentional interface quality.
+    skills:
+      - frontend-design
+      - baseline-ui
+      - fixing-accessibility
+      - fixing-metadata
+      - fixing-motion-performance
+      - color-expert
+  playwright-testing:
+    enabled_by_default: true
+    description: Focused Playwright patterns, CI, POM, migration, and CLI use.
+    skills:
+      - testdino-playwright
+      - playwright-core
+      - playwright-ci
+      - playwright-pom
+      - playwright-migration
+      - playwright-cli
+  experimental-agent-development:
+    enabled_by_default: false
+    description: Model-specific or overlapping agent-development systems.
+    skills:
+      - neolab-prompt-engineering
+      - claude-memory-kit
+      - agent-reach
+      - neolab-sdd
+      - neolab-ddd
+      - neolab-sadd
+  scientific-research:
+    enabled_by_default: false
+    description: Large scientific research and analysis collection.
+    skills:
+      - k-dense-scientific
+  ai-research:
+    enabled_by_default: false
+    description: AI architecture, training, inference, and research collection.
+    skills:
+      - orchestra-ai-research
+  health:
+    enabled_by_default: false
+    description: High-stakes health information collection.
+    skills:
+      - claude-ally-health
+  legal:
+    enabled_by_default: false
+    description: High-stakes legal workflow collection.
+    skills:
+      - lawvable-legal
+  genealogy:
+    enabled_by_default: false
+    description: Source-backed genealogy research workflow.
+    skills:
+      - genealogy-research
+  aws:
+    enabled_by_default: false
+    description: AWS architecture, CDK, MCP, cost, and event-driven skills.
+    skills:
+      - aws-agentic-ai
+      - aws-cdk-development
+      - aws-mcp-setup
+      - aws-cost-operations
+      - aws-serverless-eda
+  video:
+    enabled_by_default: false
+    description: VideoDB API-backed video workflows.
+    skills:
+      - videodb-video
+  extended-ui:
+    enabled_by_default: false
+    description: Broad UI/UX Pro Max collection.
+    skills:
+      - ui-ux-pro-max
+  alternate-playwright:
+    enabled_by_default: false
+    description: Redundant alternate Playwright workflow.
+    skills:
+      - lackeyjb-playwright
+
+skills:
+  using-superpowers: &superpower
+    source: obra-superpowers
+    path: skills/using-superpowers
+    status: approved
+    rationale: Entry point and usage discipline for the complete workflow.
+  brainstorming:
+    <<: *superpower
+    path: skills/brainstorming
+    rationale: Clarifies intent and design before implementation.
+  writing-plans:
+    <<: *superpower
+    path: skills/writing-plans
+    rationale: Produces executable engineering plans.
+  executing-plans:
+    <<: *superpower
+    path: skills/executing-plans
+    rationale: Executes written plans with checkpoints.
+  dispatching-parallel-agents:
+    <<: *superpower
+    path: skills/dispatching-parallel-agents
+    rationale: Coordinates independent parallel tasks.
+  subagent-driven-development:
+    <<: *superpower
+    path: skills/subagent-driven-development
+    rationale: Structures delegated implementation and review.
+  test-driven-development:
+    <<: *superpower
+    path: skills/test-driven-development
+    rationale: Makes tests drive implementation behavior.
+  systematic-debugging:
+    <<: *superpower
+    path: skills/systematic-debugging
+    rationale: Uses evidence and hypotheses for debugging.
+  verification-before-completion:
+    <<: *superpower
+    path: skills/verification-before-completion
+    rationale: Requires concrete verification before completion claims.
+  requesting-code-review:
+    <<: *superpower
+    path: skills/requesting-code-review
+    rationale: Prepares focused review requests.
+  receiving-code-review:
+    <<: *superpower
+    path: skills/receiving-code-review
+    rationale: Evaluates review feedback technically.
+  using-git-worktrees:
+    <<: *superpower
+    path: skills/using-git-worktrees
+    rationale: Isolates concurrent repository work safely.
+  finishing-a-development-branch:
+    <<: *superpower
+    path: skills/finishing-a-development-branch
+    rationale: Verifies and closes out branch work.
+  writing-skills:
+    <<: *superpower
+    path: skills/writing-skills
+    rationale: Creates and tests reusable agent skills.
+
+  modern-python:
+    source: trailofbits-skills
+    path: plugins/modern-python/skills/modern-python
+    status: approved
+    rationale: Current Python tooling and engineering conventions.
+  frontend-design:
+    source: anthropics-skills
+    path: skills/frontend-design
+    status: approved
+    rationale: Strong practical frontend design guidance.
+  webapp-testing:
+    source: anthropics-skills
+    path: skills/webapp-testing
+    status: approved
+    rationale: Browser-based web application verification.
+  api-testing:
+    source: lambdatest-agent-skills
+    path: api-skill
+    collection: true
+    status: candidate
+    rationale: Broad API tooling; audit overlap and size before promotion.
+  junit-5:
+    source: lambdatest-agent-skills
+    path: junit-5-skill
+    status: approved
+    rationale: Focused JUnit 5 and Mockito guidance for daily Java work.
+  pytest:
+    source: lambdatest-agent-skills
+    path: pytest-skill
+    status: approved
+    rationale: Focused pytest fixtures, parametrization, and mocking reference.
+  vitest:
+    source: lambdatest-agent-skills
+    path: vitest-skill
+    status: approved
+    rationale: Focused Vitest patterns for Vite-based JavaScript and TypeScript.
+  property-based-testing:
+    source: trailofbits-skills
+    path: plugins/property-based-testing/skills/property-based-testing
+    status: approved
+    rationale: High-value generative testing across languages and contracts.
+
+  agents-md:
+    source: getsentry-skills
+    path: skills/agents-md
+    status: approved
+    rationale: Practical repository-level agent instruction authoring.
+  mcp-builder:
+    source: anthropics-skills
+    path: skills/mcp-builder
+    status: approved
+    rationale: Useful protocol-server development workflow.
+  skill-creator:
+    source: anthropics-skills
+    path: skills/skill-creator
+    status: approved
+    rationale: General skill design and packaging guidance.
+  eval-audit: &eval_candidate
+    source: hamelsmu-evals-skills
+    path: skills/eval-audit
+    status: approved
+    rationale: Practical audit entry point for product evaluation systems.
+  error-analysis:
+    <<: *eval_candidate
+    path: skills/error-analysis
+    rationale: Systematic failure-mode analysis for agent products.
+  generate-synthetic-data:
+    <<: *eval_candidate
+    path: skills/generate-synthetic-data
+    rationale: Builds diverse evaluation inputs when production data is sparse.
+  write-judge-prompt:
+    <<: *eval_candidate
+    path: skills/write-judge-prompt
+    rationale: Designs focused LLM-as-judge evaluators.
+  validate-evaluator:
+    <<: *eval_candidate
+    path: skills/validate-evaluator
+    rationale: Calibrates automated evaluators against human labels.
+
+  context-fundamentals: &context_skill
+    source: context-engineering
+    path: skills/context-fundamentals
+    status: approved
+    rationale: Foundation for managing agent context deliberately.
+  context-degradation:
+    <<: *context_skill
+    path: skills/context-degradation
+    rationale: Diagnoses context poisoning, distraction, and loss.
+  context-compression:
+    <<: *context_skill
+    path: skills/context-compression
+    rationale: Designs compaction for long-running agents.
+  context-optimization:
+    <<: *context_skill
+    path: skills/context-optimization
+    rationale: Applies masking, caching, and context allocation.
+  filesystem-context:
+    <<: *context_skill
+    path: skills/filesystem-context
+    rationale: Uses disk-backed context for durable agent workflows.
+  multi-agent-patterns:
+    <<: *context_skill
+    path: skills/multi-agent-patterns
+    rationale: Covers orchestrator, peer, and hierarchical designs.
+  memory-systems:
+    <<: *context_skill
+    path: skills/memory-systems
+    rationale: Designs short-term and durable agent memory.
+  tool-design:
+    <<: *context_skill
+    path: skills/tool-design
+    rationale: Improves tool interfaces and agent usability.
+  evaluation:
+    <<: *context_skill
+    path: skills/evaluation
+    rationale: Establishes evaluation frameworks for agent systems.
+
+  security-best-practices:
+    source: openai-skills
+    path: skills/.curated/security-best-practices
+    status: approved
+    rationale: Language-aware secure coding review.
+  security-threat-model:
+    source: openai-skills
+    path: skills/.curated/security-threat-model
+    status: approved
+    rationale: Repository-grounded threat modeling.
+  differential-review: &trailofbits_security
+    source: trailofbits-skills
+    path: plugins/differential-review/skills/differential-review
+    status: approved
+    rationale: Security-focused change review.
+  insecure-defaults:
+    <<: *trailofbits_security
+    path: plugins/insecure-defaults/skills/insecure-defaults
+    rationale: Finds dangerous configuration defaults.
+  static-analysis:
+    source: trailofbits-skills
+    path: plugins/static-analysis/skills
+    collection: true
+    status: approved
+    rationale: Audited CodeQL, Semgrep, and SARIF workflows from Trail of Bits.
+  variant-analysis:
+    <<: *trailofbits_security
+    path: plugins/variant-analysis/skills/variant-analysis
+    rationale: Finds related instances after identifying one vulnerability.
+
+  baseline-ui: &ibelick_ui
+    source: ibelick-ui-skills
+    path: skills/baseline-ui
+    status: approved
+    rationale: Concise baseline constraints for intentional interfaces.
+  fixing-accessibility:
+    <<: *ibelick_ui
+    path: skills/fixing-accessibility
+    rationale: Focused accessibility remediation.
+  fixing-metadata:
+    <<: *ibelick_ui
+    path: skills/fixing-metadata
+    rationale: Focused page and sharing metadata remediation.
+  fixing-motion-performance:
+    <<: *ibelick_ui
+    path: skills/fixing-motion-performance
+    rationale: Focused motion-performance remediation.
+  color-expert:
+    source: meodai-color-expert
+    path: .
+    output: color-expert
+    status: approved
+    rationale: Deep color science, palette, and accessibility reference.
+
+  testdino-playwright: &testdino
+    source: testdino-playwright
+    path: .
+    output: testdino-playwright
+    status: approved
+    rationale: Entry point for the selected Playwright collection.
+  playwright-core:
+    <<: *testdino
+    path: core
+    output: playwright-core
+    rationale: Core locator, assertion, and reliability patterns.
+  playwright-ci:
+    <<: *testdino
+    path: ci
+    output: playwright-ci
+    rationale: CI execution and artifact practices.
+  playwright-pom:
+    <<: *testdino
+    path: pom
+    output: playwright-pom
+    rationale: Page-object modeling patterns.
+  playwright-migration:
+    <<: *testdino
+    path: migration
+    output: playwright-migration
+    rationale: Migration guidance from other browser test stacks.
+  playwright-cli:
+    <<: *testdino
+    path: playwright-cli
+    output: playwright-cli
+    rationale: Focused Playwright CLI workflow.
+
+  neolab-prompt-engineering:
+    source: neolab-context-engineering
+    path: plugins/customaize-agent/skills/prompt-engineering
+    status: candidate
+    rationale: Model-specific and persuasion-heavy; quarantine for review.
+  claude-memory-kit:
+    source: claude-memory-kit
+    path: .
+    collection: true
+    status: candidate
+    rationale: Full Claude hooks and memory scaffold overlaps local memory.
+  agent-reach:
+    source: agent-reach
+    path: .
+    collection: true
+    status: candidate
+    rationale: Installs external CLIs and may require cookies and proxies.
+  neolab-sdd:
+    source: neolab-context-engineering
+    path: plugins/sdd/skills
+    collection: true
+    status: candidate
+    rationale: Substantial workflow overlap with Superpowers and work plans.
+  neolab-ddd:
+    source: neolab-context-engineering
+    path: plugins/ddd/skills
+    collection: true
+    status: candidate
+    rationale: Cached implementation was too narrow for a default DDD workflow.
+  neolab-sadd:
+    source: neolab-context-engineering
+    path: plugins/sadd/skills
+    collection: true
+    status: candidate
+    rationale: Overlaps the selected Superpowers subagent workflows.
+
+  k-dense-scientific:
+    source: k-dense-scientific
+    path: .
+    collection: true
+    status: candidate
+    rationale: Large, specialized collection with prior missing references.
+  orchestra-ai-research:
+    source: orchestra-ai-research
+    path: .
+    collection: true
+    status: candidate
+    rationale: Broad AI research collection; opt in per project.
+  claude-ally-health:
+    source: claude-ally-health
+    path: .
+    collection: true
+    status: candidate
+    rationale: High-stakes and primarily Chinese; never enabled by default.
+  lawvable-legal:
+    source: lawvable-legal
+    path: .
+    collection: true
+    status: candidate
+    rationale: High-stakes legal workflows require explicit opt-in.
+  genealogy-research:
+    source: genealogy-research
+    output: genealogy-research
+    status: candidate
+    rationale: Well-structured but domain-specific research workflow.
+
+  aws-agentic-ai: &aws_skill
+    source: zxkane-aws-skills
+    path: plugins/aws-agentic-ai/skills/aws-agentic-ai
+    status: candidate
+    rationale: Useful when building agentic systems on AWS.
+  aws-cdk-development:
+    <<: *aws_skill
+    path: plugins/aws-iac/skills/aws-cdk-development
+    rationale: AWS CDK engineering workflow.
+  aws-mcp-setup:
+    <<: *aws_skill
+    path: plugins/aws-common/skills/aws-mcp-setup
+    rationale: AWS MCP setup is useful only in AWS-focused work.
+  aws-cost-operations:
+    <<: *aws_skill
+    path: plugins/aws-cost-ops/skills/aws-cost-operations
+    rationale: AWS cost analysis and optimization.
+  aws-serverless-eda:
+    <<: *aws_skill
+    path: plugins/serverless-eda/skills/aws-serverless-eda
+    rationale: AWS serverless event-driven architecture.
+  videodb-video:
+    source: videodb-skills
+    path: python
+    output: videodb-video
+    status: candidate
+    rationale: Requires the VideoDB SDK, service, and API credentials.
+  ui-ux-pro-max:
+    source: ui-ux-pro-max
+    path: .
+    collection: true
+    status: candidate
+    rationale: Broad and useful, but overlaps the smaller default UI set.
+  lackeyjb-playwright:
+    source: lackeyjb-playwright
+    path: .
+    output: lackeyjb-playwright
+    status: candidate
+    rationale: Redundant with the selected Playwright and webapp-testing skills.

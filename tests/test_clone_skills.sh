@@ -238,7 +238,7 @@ run_script() {
     PATH="${fake_bin_dir}:$PATH" \
     FAKE_GIT_LOG="$log_file" \
     FAKE_REMOTE_ROOT="$remote_root" \
-    ./clone-skills.sh
+    ./clone-skills.sh --all-from-readme
   )
 }
 

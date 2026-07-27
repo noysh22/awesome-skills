@@ -1,0 +1,117 @@
+version: 1
+config_sha256: a18bd9ef5a9d53fb4f65da2e1d78ab984ad799310ed5fb90458a8f1a964dc494
+sources:
+  obra-superpowers:
+    kind: git
+    repo: https://github.com/obra/superpowers.git
+    requested_ref: v6.2.0
+    resolved_commit: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  trailofbits-skills:
+    kind: git
+    repo: https://github.com/trailofbits/skills.git
+    requested_ref: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+    resolved_commit: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  anthropics-skills:
+    kind: git
+    repo: https://github.com/anthropics/skills.git
+    requested_ref: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+    resolved_commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  lambdatest-agent-skills:
+    kind: git
+    repo: https://github.com/LambdaTest/agent-skills.git
+    requested_ref: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+    resolved_commit: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  getsentry-skills:
+    kind: git
+    repo: https://github.com/getsentry/skills.git
+    requested_ref: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
+    resolved_commit: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
+  hamelsmu-evals-skills:
+    kind: git
+    repo: https://github.com/hamelsmu/evals-skills.git
+    requested_ref: 814ebeae0ecef6151a4d3846e19ab123e1832137
+    resolved_commit: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  context-engineering:
+    kind: git
+    repo: https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering.git
+    requested_ref: c578e85e40fe2bda7c1fec91ff64cf5285434934
+    resolved_commit: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  openai-skills:
+    kind: git
+    repo: https://github.com/openai/skills.git
+    requested_ref: 49f948faa9258a0c61caceaf225e179651397431
+    resolved_commit: 49f948faa9258a0c61caceaf225e179651397431
+  ibelick-ui-skills:
+    kind: git
+    repo: https://github.com/ibelick/ui-skills.git
+    requested_ref: ae74b58e722abe7ddf5948e07dd220808acce8a9
+    resolved_commit: ae74b58e722abe7ddf5948e07dd220808acce8a9
+  meodai-color-expert:
+    kind: git
+    repo: https://github.com/meodai/skill.color-expert.git
+    requested_ref: 2e30f07874ec947f10f3e4803d7295055dec83bd
+    resolved_commit: 2e30f07874ec947f10f3e4803d7295055dec83bd
+  testdino-playwright:
+    kind: git
+    repo: https://github.com/testdino-hq/playwright-skill.git
+    requested_ref: d3be9ca4d7303e2aee3eba4842963abf573117b0
+    resolved_commit: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  neolab-context-engineering:
+    kind: git
+    repo: https://github.com/NeoLabHQ/context-engineering-kit.git
+    requested_ref: c4da85aef8c486148c33131e736c896dfa302bf0
+    resolved_commit: c4da85aef8c486148c33131e736c896dfa302bf0
+  claude-memory-kit:
+    kind: git
+    repo: https://github.com/awrshift/claude-memory-kit.git
+    requested_ref: a23ed45f5e952054d864bd4731c03607f88da755
+    resolved_commit: a23ed45f5e952054d864bd4731c03607f88da755
+  agent-reach:
+    kind: git
+    repo: https://github.com/Panniantong/Agent-Reach.git
+    requested_ref: b4d52c46c9113cb0f653d6df4cf71ebadf4930ac
+    resolved_commit: b4d52c46c9113cb0f653d6df4cf71ebadf4930ac
+  k-dense-scientific:
+    kind: git
+    repo: https://github.com/K-Dense-AI/claude-scientific-skills.git
+    requested_ref: 665663cac17c7cbfa71a6a3b2dad95db494996c1
+    resolved_commit: 665663cac17c7cbfa71a6a3b2dad95db494996c1
+  orchestra-ai-research:
+    kind: git
+    repo: https://github.com/Orchestra-Research/AI-research-SKILLs.git
+    requested_ref: 773a52944ba4747a18bd4ae9ade53fff041adcbc
+    resolved_commit: 773a52944ba4747a18bd4ae9ade53fff041adcbc
+  claude-ally-health:
+    kind: git
+    repo: https://github.com/huifer/Claude-Ally-Health.git
+    requested_ref: f604350c8448194ee7791495c1b3b84e1895c30b
+    resolved_commit: f604350c8448194ee7791495c1b3b84e1895c30b
+  lawvable-legal:
+    kind: git
+    repo: https://github.com/lawvable/awesome-legal-skills.git
+    requested_ref: 7f58aaf1fbc7b12904b15b622edb1f8ac0742f5a
+    resolved_commit: 7f58aaf1fbc7b12904b15b622edb1f8ac0742f5a
+  genealogy-research:
+    kind: http
+    url: https://paulo.com.br/skills/genealogy-research/SKILL.md
+    sha256: 06f17b18f53314c99580d656827906ff23e55f0ee62e9103ad604f7f5462dd3a
+  zxkane-aws-skills:
+    kind: git
+    repo: https://github.com/zxkane/aws-skills.git
+    requested_ref: 68530c6f296ccd2f5e99c79782f3e0fbf962c51a
+    resolved_commit: 68530c6f296ccd2f5e99c79782f3e0fbf962c51a
+  videodb-skills:
+    kind: git
+    repo: https://github.com/video-db/skills.git
+    requested_ref: b7349d2d3155e9fbd3068fcb80bad22b68ad3c9b
+    resolved_commit: b7349d2d3155e9fbd3068fcb80bad22b68ad3c9b
+  ui-ux-pro-max:
+    kind: git
+    repo: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
+    requested_ref: 1307d97a72e6c1cda572cb65471ae5ce82995218
+    resolved_commit: 1307d97a72e6c1cda572cb65471ae5ce82995218
+  lackeyjb-playwright:
+    kind: git
+    repo: https://github.com/lackeyjb/playwright-skill.git
+    requested_ref: bb7e920d376022958214e349ef25498a2644e189
+    resolved_commit: bb7e920d376022958214e349ef25498a2644e189

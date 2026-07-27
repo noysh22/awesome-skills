@@ -5,3 +5,7 @@ scripts/download-skills.py
 .DS_Store
 .claude/
 .skills-cache/
+.skills-candidates/
+.skills-staging.*
+.candidate-staging.*
+work/

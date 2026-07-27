@@ -38,6 +38,87 @@ Compatible with Claude Code, Codex, Antigravity, Gemini CLI, Cursor, GitHub Copi
 
 The most contributed Agent Skills repository, built and maintained together with the community.
 
+## Curated Group Installer
+
+This branch includes a reproducible installer for selecting a small daily set
+instead of downloading every repository in this catalog. Selection lives in
+[`skills.yaml`](skills.yaml), and immutable source resolutions live in
+[`skills.lock.yaml`](skills.lock.yaml).
+
+Install the pinned configuration dependency:
+
+```sh
+python3 -m pip install -r requirements.txt
+```
+
+Inspect the catalog without writing anything:
+
+```sh
+./clone-skills.sh --list-groups
+./clone-skills.sh --dry-run
+./clone-skills.sh --group superpowers --group context-engineering --dry-run
+```
+
+Build the approved defaults:
+
+```sh
+./clone-skills.sh
+```
+
+Candidate skills are downloaded to `.skills-candidates/`, audited, and excluded
+from the manifest's installable `skills` list unless their YAML status is
+explicitly changed to `approved`. Candidate-only group audits preserve and
+revalidate the last approved build:
+
+```sh
+./clone-skills.sh --audit-candidates
+./clone-skills.sh --group aws --audit-candidates
+```
+
+The build fetches exact Git commits or verifies an HTTPS SHA-256 checksum,
+copies only configured skill directories, runs static validation without
+executing third-party scripts, and atomically replaces `skills/` only when all
+approved skills pass. It writes:
+
+- `skills.manifest.yaml` — approved outputs used by the symlink synchronizer
+- `skills.lock.yaml` — requested refs and immutable resolved pins
+- `skill-audit.md` — approved and candidate structural findings
+
+After a successful build, synchronize only the approved manifest entries into
+the local skills root:
+
+```sh
+/Users/noy/src/ai/scripts/sync-skills.sh
+```
+
+The synchronizer keeps its managed-name list at
+`/Users/noy/src/ai/skills/.awesome-skills-managed`, repairs broken managed
+links, removes stale managed links, excludes candidates, and never replaces a
+real file or directory.
+
+Each YAML skill has a `source`, relative `path`, `status`, and `rationale`.
+Collections additionally set `collection: true` and expand all nested
+`SKILL.md` roots. Groups set `enabled_by_default`; default-group flags and
+`defaults.groups` must agree.
+
+To promote a candidate, review its quarantined files and audit findings, change
+its `status` to `approved`, regenerate the lock, and rebuild:
+
+```sh
+./clone-skills.sh --write-lock-only
+./clone-skills.sh
+```
+
+The previous README-wide downloader remains available only as an explicit,
+unpinned legacy mode:
+
+```sh
+./clone-skills.sh --all-from-readme
+```
+
+Generated cache and output can be rebuilt from tracked YAML and the lock file.
+Do not delete unrelated real skill directories when cleaning symlinks.
+
 
 ## 💛 Sponsors
 
