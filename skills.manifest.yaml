@@ -1,11 +1,11 @@
 version: 1
-config_sha256: a18bd9ef5a9d53fb4f65da2e1d78ab984ad799310ed5fb90458a8f1a964dc494
+config_sha256: e5f8a96073b5a064dcb7be66e332ecd508e766d5359d1d4f5b08fcceef3914a3
 skills_root: /Users/noy/src/git/awesome-skills/skills
 skills:
 - name: agents-md
   selection: agents-md
   source: getsentry-skills
-  pin: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
+  pin: c2f99a5b04b4cd992ec3022d7c2c3e23e938d241
   path: skills/agents-md
   groups:
   - agent-development
@@ -13,7 +13,7 @@ skills:
 - name: baseline-ui
   selection: baseline-ui
   source: ibelick-ui-skills
-  pin: ae74b58e722abe7ddf5948e07dd220808acce8a9
+  pin: c5bcd86450b3582ba25204c622b9213b07464938
   path: skills/baseline-ui
   groups:
   - ui-quality
@@ -21,7 +21,7 @@ skills:
 - name: brainstorming
   selection: brainstorming
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/brainstorming
   groups:
   - superpowers
@@ -29,7 +29,7 @@ skills:
 - name: codeql
   selection: static-analysis
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/static-analysis/skills/codeql
   groups: &id001
   - secure-review
@@ -37,7 +37,7 @@ skills:
 - name: color-expert
   selection: color-expert
   source: meodai-color-expert
-  pin: 2e30f07874ec947f10f3e4803d7295055dec83bd
+  pin: 814f874f399fb60a746bc1cf607f07c8e85e7c45
   path: .
   groups:
   - ui-quality
@@ -45,7 +45,7 @@ skills:
 - name: context-compression
   selection: context-compression
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/context-compression
   groups:
   - context-engineering
@@ -53,7 +53,7 @@ skills:
 - name: context-degradation
   selection: context-degradation
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/context-degradation
   groups:
   - context-engineering
@@ -61,7 +61,7 @@ skills:
 - name: context-fundamentals
   selection: context-fundamentals
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/context-fundamentals
   groups:
   - context-engineering
@@ -69,7 +69,7 @@ skills:
 - name: context-optimization
   selection: context-optimization
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/context-optimization
   groups:
   - context-engineering
@@ -77,7 +77,7 @@ skills:
 - name: differential-review
   selection: differential-review
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/differential-review/skills/differential-review
   groups:
   - secure-review
@@ -85,7 +85,7 @@ skills:
 - name: dispatching-parallel-agents
   selection: dispatching-parallel-agents
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/dispatching-parallel-agents
   groups:
   - superpowers
@@ -93,7 +93,7 @@ skills:
 - name: error-analysis
   selection: error-analysis
   source: hamelsmu-evals-skills
-  pin: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  pin: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
   path: skills/error-analysis
   groups:
   - agent-development
@@ -101,7 +101,7 @@ skills:
 - name: eval-audit
   selection: eval-audit
   source: hamelsmu-evals-skills
-  pin: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  pin: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
   path: skills/eval-audit
   groups:
   - agent-development
@@ -109,7 +109,7 @@ skills:
 - name: evaluation
   selection: evaluation
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/evaluation
   groups:
   - context-engineering
@@ -117,7 +117,7 @@ skills:
 - name: executing-plans
   selection: executing-plans
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/executing-plans
   groups:
   - superpowers
@@ -125,7 +125,7 @@ skills:
 - name: filesystem-context
   selection: filesystem-context
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/filesystem-context
   groups:
   - context-engineering
@@ -133,7 +133,7 @@ skills:
 - name: finishing-a-development-branch
   selection: finishing-a-development-branch
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/finishing-a-development-branch
   groups:
   - superpowers
@@ -141,7 +141,7 @@ skills:
 - name: fixing-accessibility
   selection: fixing-accessibility
   source: ibelick-ui-skills
-  pin: ae74b58e722abe7ddf5948e07dd220808acce8a9
+  pin: c5bcd86450b3582ba25204c622b9213b07464938
   path: skills/fixing-accessibility
   groups:
   - ui-quality
@@ -149,7 +149,7 @@ skills:
 - name: fixing-metadata
   selection: fixing-metadata
   source: ibelick-ui-skills
-  pin: ae74b58e722abe7ddf5948e07dd220808acce8a9
+  pin: c5bcd86450b3582ba25204c622b9213b07464938
   path: skills/fixing-metadata
   groups:
   - ui-quality
@@ -157,7 +157,7 @@ skills:
 - name: fixing-motion-performance
   selection: fixing-motion-performance
   source: ibelick-ui-skills
-  pin: ae74b58e722abe7ddf5948e07dd220808acce8a9
+  pin: c5bcd86450b3582ba25204c622b9213b07464938
   path: skills/fixing-motion-performance
   groups:
   - ui-quality
@@ -165,7 +165,7 @@ skills:
 - name: frontend-design
   selection: frontend-design
   source: anthropics-skills
-  pin: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  pin: 34040c9c568585f6929bedeaad110ad08f079624
   path: skills/frontend-design
   groups:
   - coding-and-testing
@@ -174,23 +174,15 @@ skills:
 - name: generate-synthetic-data
   selection: generate-synthetic-data
   source: hamelsmu-evals-skills
-  pin: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  pin: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
   path: skills/generate-synthetic-data
   groups:
   - agent-development
   status: approved
-- name: insecure-defaults
-  selection: insecure-defaults
-  source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
-  path: plugins/insecure-defaults/skills/insecure-defaults
-  groups:
-  - secure-review
-  status: approved
 - name: junit-5
   selection: junit-5
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: junit-5-skill
   groups:
   - coding-and-testing
@@ -198,7 +190,7 @@ skills:
 - name: mcp-builder
   selection: mcp-builder
   source: anthropics-skills
-  pin: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  pin: 34040c9c568585f6929bedeaad110ad08f079624
   path: skills/mcp-builder
   groups:
   - agent-development
@@ -206,7 +198,7 @@ skills:
 - name: memory-systems
   selection: memory-systems
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/memory-systems
   groups:
   - context-engineering
@@ -214,7 +206,7 @@ skills:
 - name: modern-python
   selection: modern-python
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/modern-python/skills/modern-python
   groups:
   - coding-and-testing
@@ -222,7 +214,7 @@ skills:
 - name: multi-agent-patterns
   selection: multi-agent-patterns
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/multi-agent-patterns
   groups:
   - context-engineering
@@ -230,7 +222,7 @@ skills:
 - name: playwright-ci
   selection: playwright-ci
   source: testdino-playwright
-  pin: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  pin: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   path: ci
   groups:
   - playwright-testing
@@ -238,7 +230,7 @@ skills:
 - name: playwright-cli
   selection: playwright-cli
   source: testdino-playwright
-  pin: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  pin: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   path: playwright-cli
   groups:
   - playwright-testing
@@ -246,7 +238,7 @@ skills:
 - name: playwright-core
   selection: playwright-core
   source: testdino-playwright
-  pin: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  pin: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   path: core
   groups:
   - playwright-testing
@@ -254,7 +246,7 @@ skills:
 - name: playwright-migration
   selection: playwright-migration
   source: testdino-playwright
-  pin: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  pin: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   path: migration
   groups:
   - playwright-testing
@@ -262,7 +254,7 @@ skills:
 - name: playwright-pom
   selection: playwright-pom
   source: testdino-playwright
-  pin: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  pin: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   path: pom
   groups:
   - playwright-testing
@@ -270,7 +262,7 @@ skills:
 - name: property-based-testing
   selection: property-based-testing
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/property-based-testing/skills/property-based-testing
   groups:
   - coding-and-testing
@@ -278,7 +270,7 @@ skills:
 - name: pytest
   selection: pytest
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: pytest-skill
   groups:
   - coding-and-testing
@@ -286,7 +278,7 @@ skills:
 - name: receiving-code-review
   selection: receiving-code-review
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/receiving-code-review
   groups:
   - superpowers
@@ -294,7 +286,7 @@ skills:
 - name: requesting-code-review
   selection: requesting-code-review
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/requesting-code-review
   groups:
   - superpowers
@@ -302,7 +294,7 @@ skills:
 - name: sarif-parsing
   selection: static-analysis
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/static-analysis/skills/sarif-parsing
   groups: *id001
   status: approved
@@ -325,14 +317,14 @@ skills:
 - name: semgrep
   selection: static-analysis
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/static-analysis/skills/semgrep
   groups: *id001
   status: approved
 - name: skill-creator
   selection: skill-creator
   source: anthropics-skills
-  pin: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  pin: 34040c9c568585f6929bedeaad110ad08f079624
   path: skills/skill-creator
   groups:
   - agent-development
@@ -340,7 +332,7 @@ skills:
 - name: subagent-driven-development
   selection: subagent-driven-development
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/subagent-driven-development
   groups:
   - superpowers
@@ -348,7 +340,7 @@ skills:
 - name: systematic-debugging
   selection: systematic-debugging
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/systematic-debugging
   groups:
   - superpowers
@@ -356,7 +348,7 @@ skills:
 - name: test-driven-development
   selection: test-driven-development
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/test-driven-development
   groups:
   - superpowers
@@ -364,7 +356,7 @@ skills:
 - name: testdino-playwright
   selection: testdino-playwright
   source: testdino-playwright
-  pin: d3be9ca4d7303e2aee3eba4842963abf573117b0
+  pin: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   path: .
   groups:
   - playwright-testing
@@ -372,7 +364,7 @@ skills:
 - name: tool-design
   selection: tool-design
   source: context-engineering
-  pin: c578e85e40fe2bda7c1fec91ff64cf5285434934
+  pin: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   path: skills/tool-design
   groups:
   - context-engineering
@@ -380,7 +372,7 @@ skills:
 - name: using-git-worktrees
   selection: using-git-worktrees
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/using-git-worktrees
   groups:
   - superpowers
@@ -388,7 +380,7 @@ skills:
 - name: using-superpowers
   selection: using-superpowers
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/using-superpowers
   groups:
   - superpowers
@@ -396,7 +388,7 @@ skills:
 - name: validate-evaluator
   selection: validate-evaluator
   source: hamelsmu-evals-skills
-  pin: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  pin: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
   path: skills/validate-evaluator
   groups:
   - agent-development
@@ -404,7 +396,7 @@ skills:
 - name: variant-analysis
   selection: variant-analysis
   source: trailofbits-skills
-  pin: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+  pin: 123037ec8aed26f0d86327cc39137ee5043e5deb
   path: plugins/variant-analysis/skills/variant-analysis
   groups:
   - secure-review
@@ -412,7 +404,7 @@ skills:
 - name: verification-before-completion
   selection: verification-before-completion
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/verification-before-completion
   groups:
   - superpowers
@@ -420,7 +412,7 @@ skills:
 - name: vitest
   selection: vitest
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: vitest-skill
   groups:
   - coding-and-testing
@@ -428,7 +420,7 @@ skills:
 - name: webapp-testing
   selection: webapp-testing
   source: anthropics-skills
-  pin: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+  pin: 34040c9c568585f6929bedeaad110ad08f079624
   path: skills/webapp-testing
   groups:
   - coding-and-testing
@@ -436,7 +428,7 @@ skills:
 - name: write-judge-prompt
   selection: write-judge-prompt
   source: hamelsmu-evals-skills
-  pin: 814ebeae0ecef6151a4d3846e19ab123e1832137
+  pin: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
   path: skills/write-judge-prompt
   groups:
   - agent-development
@@ -444,7 +436,7 @@ skills:
 - name: writing-plans
   selection: writing-plans
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/writing-plans
   groups:
   - superpowers
@@ -452,7 +444,7 @@ skills:
 - name: writing-skills
   selection: writing-skills
   source: obra-superpowers
-  pin: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+  pin: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   path: skills/writing-skills
   groups:
   - superpowers
@@ -461,7 +453,7 @@ candidates:
 - name: ai-based-api
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/ai-based-api
   groups: &id002
   - coding-and-testing
@@ -469,161 +461,161 @@ candidates:
 - name: api-analyzer
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-analyzer
   groups: *id002
   status: candidate
 - name: api-compliance
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-compliance
   groups: *id002
   status: candidate
 - name: api-designer
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-designer
   groups: *id002
   status: candidate
 - name: api-documentation
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-documentation
   groups: *id002
   status: candidate
 - name: api-health-monitoring
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-health-monitoring
   groups: *id002
   status: candidate
 - name: api-inference-from-files
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-inference-from-files
   groups: *id002
   status: candidate
 - name: api-integration-helper
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-integration-helper
   groups: *id002
   status: candidate
 - name: api-mocking
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-mocking
   groups: *id002
   status: candidate
 - name: api-ratelimit-helper
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-ratelimit-helper
   groups: *id002
   status: candidate
 - name: api-sdk-generator
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-sdk-generator
   groups: *id002
   status: candidate
 - name: api-security-patterns
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-security-patterns
   groups: *id002
   status: candidate
 - name: api-to-testcase-generator
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-to-testcase-generator
   groups: *id002
   status: candidate
 - name: api-versioning-helper
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/api-versioning-helper
   groups: *id002
   status: candidate
 - name: graphql-grpc-helper
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/graphql-grpc-helper
   groups: *id002
   status: candidate
 - name: newman-cicd-helper
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/newman/newman-cicd-helper
   groups: *id002
   status: candidate
 - name: newman-report-analyzer
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/newman/newman-report-analyzer
   groups: *id002
   status: candidate
 - name: newman-script-helper
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/newman/newman-script-helper
   groups: *id002
   status: candidate
 - name: openapi-spec-generator
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/openapi-spec-generator
   groups: *id002
   status: candidate
 - name: popular-api-fetcher
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/popular-api-fetcher
   groups: *id002
   status: candidate
 - name: postman-collection-generator
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/postman/postman-collection-generator
   groups: *id002
   status: candidate
 - name: postman-openapi-converter
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/postman/postman-openapi-converter
   groups: *id002
   status: candidate
 - name: postman-testcase-generator
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/postman/postman-testcase-generator
   groups: *id002
   status: candidate
 - name: postman-to-newman
   selection: api-testing
   source: lambdatest-agent-skills
-  pin: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+  pin: 0de6ebfd44b7c67c62171320c4446f13856fc443
   path: api-skill/postman/postman-to-newman
   groups: *id002
   status: candidate

@@ -2,7 +2,7 @@
 
 ## Approved skills
 
-- Skills: 57
+- Skills: 56
 - Blocking errors: 0
 - Warnings: 10
 
@@ -13,7 +13,7 @@
 | warning | `skill-creator` | `absolute-path` | contains local absolute path '/tmp/eval_review_<skill-name>.html' |
 | warning | `skill-creator` | `absolute-path` | contains local absolute path '/tmp/eval_review_<skill-name>.html' |
 | warning | `skill-creator` | `absolute-path` | contains local absolute path '/tmp/skill-name/' |
-| warning | `subagent-driven-development` | `oversized-skill` | SKILL.md has 503 lines; review context cost |
+| warning | `subagent-driven-development` | `oversized-skill` | SKILL.md has 568 lines; review context cost |
 | warning | `testdino-playwright` | `name-mismatch` | frontmatter name 'playwright-skill' differs from output directory |
 | warning | `vitest` | `name-mismatch` | frontmatter name 'vitest-skill' differs from output directory |
 | warning | `webapp-testing` | `absolute-path` | contains local absolute path "/tmp/inspect.png'," |

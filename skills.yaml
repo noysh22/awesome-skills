@@ -16,38 +16,38 @@ sources:
   obra-superpowers:
     kind: git
     repo: https://github.com/obra/superpowers.git
-    ref: v6.2.0
-    commit: 3dcbd5c4b48e02263fbf4a3c01e3fe4f81d584d9
+    ref: v6.3.0
+    commit: b36e0829c6d0140e93cfef2ca599b1b07d4a7797
   trailofbits-skills:
     kind: git
     repo: https://github.com/trailofbits/skills.git
-    ref: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
-    commit: cfe5d7b1619e47fb5b38b7e2561dad7e5f1e89af
+    ref: 123037ec8aed26f0d86327cc39137ee5043e5deb
+    commit: 123037ec8aed26f0d86327cc39137ee5043e5deb
   anthropics-skills:
     kind: git
     repo: https://github.com/anthropics/skills.git
-    ref: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
-    commit: b29e7cf65e5cb78a5ac33d582270551bc74a14eb
+    ref: 34040c9c568585f6929bedeaad110ad08f079624
+    commit: 34040c9c568585f6929bedeaad110ad08f079624
   lambdatest-agent-skills:
     kind: git
     repo: https://github.com/LambdaTest/agent-skills.git
-    ref: 0491a3a29aa18558d2c3c64ff09367adb976c56f
-    commit: 0491a3a29aa18558d2c3c64ff09367adb976c56f
+    ref: 0de6ebfd44b7c67c62171320c4446f13856fc443
+    commit: 0de6ebfd44b7c67c62171320c4446f13856fc443
   getsentry-skills:
     kind: git
     repo: https://github.com/getsentry/skills.git
-    ref: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
-    commit: e7a87fa72645158f9b5e722cbb1c7e09266f48f1
+    ref: c2f99a5b04b4cd992ec3022d7c2c3e23e938d241
+    commit: c2f99a5b04b4cd992ec3022d7c2c3e23e938d241
   hamelsmu-evals-skills:
     kind: git
     repo: https://github.com/hamelsmu/evals-skills.git
-    ref: 814ebeae0ecef6151a4d3846e19ab123e1832137
-    commit: 814ebeae0ecef6151a4d3846e19ab123e1832137
+    ref: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
+    commit: 22418da2bfb159f28a1b0dcf64e969e14ae56c99
   context-engineering:
     kind: git
     repo: https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering.git
-    ref: c578e85e40fe2bda7c1fec91ff64cf5285434934
-    commit: c578e85e40fe2bda7c1fec91ff64cf5285434934
+    ref: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
+    commit: 6dbe1a1d868eab51a3bc9011b0f55e2891513e40
   openai-skills:
     kind: git
     repo: https://github.com/openai/skills.git
@@ -56,38 +56,38 @@ sources:
   ibelick-ui-skills:
     kind: git
     repo: https://github.com/ibelick/ui-skills.git
-    ref: ae74b58e722abe7ddf5948e07dd220808acce8a9
-    commit: ae74b58e722abe7ddf5948e07dd220808acce8a9
+    ref: c5bcd86450b3582ba25204c622b9213b07464938
+    commit: c5bcd86450b3582ba25204c622b9213b07464938
   meodai-color-expert:
     kind: git
     repo: https://github.com/meodai/skill.color-expert.git
-    ref: 2e30f07874ec947f10f3e4803d7295055dec83bd
-    commit: 2e30f07874ec947f10f3e4803d7295055dec83bd
+    ref: 814f874f399fb60a746bc1cf607f07c8e85e7c45
+    commit: 814f874f399fb60a746bc1cf607f07c8e85e7c45
   testdino-playwright:
     kind: git
     repo: https://github.com/testdino-hq/playwright-skill.git
-    ref: d3be9ca4d7303e2aee3eba4842963abf573117b0
-    commit: d3be9ca4d7303e2aee3eba4842963abf573117b0
+    ref: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
+    commit: 400e4256cd22669ad69c18d31d3e5541e4e1c2a3
   neolab-context-engineering:
     kind: git
     repo: https://github.com/NeoLabHQ/context-engineering-kit.git
-    ref: c4da85aef8c486148c33131e736c896dfa302bf0
-    commit: c4da85aef8c486148c33131e736c896dfa302bf0
+    ref: 23e2428e809d77717f8acc9659c374a3a1fcb93e
+    commit: 23e2428e809d77717f8acc9659c374a3a1fcb93e
   claude-memory-kit:
     kind: git
     repo: https://github.com/awrshift/claude-memory-kit.git
-    ref: a23ed45f5e952054d864bd4731c03607f88da755
-    commit: a23ed45f5e952054d864bd4731c03607f88da755
+    ref: 9c76b4e1e0dd2cba30b2f978ed07503406ba8590
+    commit: 9c76b4e1e0dd2cba30b2f978ed07503406ba8590
   agent-reach:
     kind: git
     repo: https://github.com/Panniantong/Agent-Reach.git
-    ref: b4d52c46c9113cb0f653d6df4cf71ebadf4930ac
-    commit: b4d52c46c9113cb0f653d6df4cf71ebadf4930ac
+    ref: a19a171fa980a0785849596492e0af4db800c82f
+    commit: a19a171fa980a0785849596492e0af4db800c82f
   k-dense-scientific:
     kind: git
     repo: https://github.com/K-Dense-AI/claude-scientific-skills.git
-    ref: 665663cac17c7cbfa71a6a3b2dad95db494996c1
-    commit: 665663cac17c7cbfa71a6a3b2dad95db494996c1
+    ref: 330c8e764435a731eff571e3efdda70b363d0792
+    commit: 330c8e764435a731eff571e3efdda70b363d0792
   orchestra-ai-research:
     kind: git
     repo: https://github.com/Orchestra-Research/AI-research-SKILLs.git
@@ -101,8 +101,8 @@ sources:
   lawvable-legal:
     kind: git
     repo: https://github.com/lawvable/awesome-legal-skills.git
-    ref: 7f58aaf1fbc7b12904b15b622edb1f8ac0742f5a
-    commit: 7f58aaf1fbc7b12904b15b622edb1f8ac0742f5a
+    ref: 180fd1582cc56fb0fc122a8e734ff3a1a666b87a
+    commit: 180fd1582cc56fb0fc122a8e734ff3a1a666b87a
   genealogy-research:
     kind: http
     url: https://paulo.com.br/skills/genealogy-research/SKILL.md
@@ -115,18 +115,18 @@ sources:
   videodb-skills:
     kind: git
     repo: https://github.com/video-db/skills.git
-    ref: b7349d2d3155e9fbd3068fcb80bad22b68ad3c9b
-    commit: b7349d2d3155e9fbd3068fcb80bad22b68ad3c9b
+    ref: b47b587e282bc95a0ec4e8a25fc72a8600941341
+    commit: b47b587e282bc95a0ec4e8a25fc72a8600941341
   ui-ux-pro-max:
     kind: git
     repo: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git
-    ref: 1307d97a72e6c1cda572cb65471ae5ce82995218
-    commit: 1307d97a72e6c1cda572cb65471ae5ce82995218
+    ref: 15de38fb70bc80ae9276fa7703b48ae861a672e6
+    commit: 15de38fb70bc80ae9276fa7703b48ae861a672e6
   lackeyjb-playwright:
     kind: git
     repo: https://github.com/lackeyjb/playwright-skill.git
-    ref: bb7e920d376022958214e349ef25498a2644e189
-    commit: bb7e920d376022958214e349ef25498a2644e189
+    ref: dd47a6a023e249eb1b36e9e943eab89d0900865d
+    commit: dd47a6a023e249eb1b36e9e943eab89d0900865d
 
 groups:
   superpowers:
@@ -191,7 +191,6 @@ groups:
       - security-best-practices
       - security-threat-model
       - differential-review
-      - insecure-defaults
       - static-analysis
       - variant-analysis
   ui-quality:
@@ -465,10 +464,6 @@ skills:
     path: plugins/differential-review/skills/differential-review
     status: approved
     rationale: Security-focused change review.
-  insecure-defaults:
-    <<: *trailofbits_security
-    path: plugins/insecure-defaults/skills/insecure-defaults
-    rationale: Finds dangerous configuration defaults.
   static-analysis:
     source: trailofbits-skills
     path: plugins/static-analysis/skills
